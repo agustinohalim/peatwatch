@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0E4D3F">
+<meta name="description" content="PeatWatch — konsep UI/UX aplikasi pemantauan kawasan gambut rawan kebakaran.">
+<title>PeatWatch · Smart Peatland Protection</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+:root{--forest:#0E4D3F;--night:#0E2A24;--ember:#E8590C;--ember-text:#C2410C;--water:#1971C2;--ground:#F3F5F2;--ink:#12201C;--ink2:#4A5A55;--line:#E1E6E3}
+*{box-sizing:border-box}
+body{margin:0;background:var(--ground);color:var(--ink);font-family:'Plus Jakarta Sans',system-ui,sans-serif}
+a{color:var(--forest)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--water);outline-offset:2px}
+.hero{background:var(--night);color:#fff}
+.hero-in{max-width:1200px;margin:0 auto;padding:56px 20px 64px;display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:48px;align-items:center}
+.brand{display:flex;align-items:center;gap:14px}
+.brand b{font-size:22px;font-weight:800;letter-spacing:-.02em}
+h1{font-size:clamp(36px,5vw,56px);line-height:1.05;letter-spacing:-.03em;font-weight:800;margin:28px 0 16px}
+h1 span{color:#FF8A3D}
+.lead{font-size:17px;line-height:1.6;color:#D3E2DD;margin:0 0 28px;max-width:560px}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:0 20px;border-radius:14px;font-weight:700;font-size:15px;text-decoration:none}
+.btn-light{background:#fff;color:var(--night)}
+.btn-ghost{border:1px solid rgba(255,255,255,.3);color:#fff}
+.btn-ghost:hover{border-color:#fff;color:#fff}
+.feat{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.feat li{display:flex;gap:14px;align-items:center;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:14px 16px}
+.feat .ic{width:40px;height:40px;border-radius:12px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.feat strong{display:block;font-size:15px}
+.feat small{font-size:13px;color:#A9C2BA}
+section{max-width:1200px;margin:0 auto;padding:64px 20px 0}
+.label{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--ink2);margin:0 0 8px}
+h2{font-size:32px;letter-spacing:-.02em;margin:0 0 8px;font-weight:800}
+.sub{color:var(--ink2);font-size:15px;line-height:1.6;margin:0 0 32px;max-width:640px}
+.screens{display:grid;grid-template-columns:repeat(auto-fill,minmax(312px,1fr));gap:40px 24px;justify-items:center}
+figure{margin:0;display:flex;flex-direction:column;align-items:center;gap:14px}
+.device{width:312px;height:676px;border-radius:34px;overflow:hidden;background:#fff;box-shadow:0 0 0 8px var(--ink),0 24px 48px rgba(14,42,36,.22)}
+.device iframe{width:390px;height:844px;border:0;transform:scale(.8);transform-origin:0 0;display:block}
+figcaption{text-align:center}
+figcaption a{font-weight:700;font-size:16px;text-decoration:none}
+figcaption span{display:block;font-size:13px;color:var(--ink2);margin-top:2px}
+.style-card{display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap;background:#fff;border:1px solid var(--line);border-radius:24px;padding:28px}
+.swatches{display:flex;gap:8px}
+.swatches i{width:44px;height:44px;border-radius:12px;display:block}
+footer{max-width:1200px;margin:0 auto;padding:64px 20px 48px;color:var(--ink2);font-size:13px;line-height:1.6}
+@media (max-width:860px){.hero-in{grid-template-columns:1fr;gap:32px;padding:40px 20px 48px}}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="hero-in">
+    <div>
+      <div class="brand">
+        <svg width="48" height="48" viewBox="0 0 72 72" aria-hidden="true"><rect width="72" height="72" rx="20" fill="#0E4D3F"/><path d="M36 14c-6 9-14 16-14 26a14 14 0 0 0 28 0c0-10-8-17-14-26z" fill="none" stroke="#fff" stroke-width="4" stroke-linejoin="round"/><path d="M26 42c3 2 6 2 10 0s7-2 10 0" fill="none" stroke="#7CC4F2" stroke-width="4" stroke-linecap="round"/><circle cx="54" cy="18" r="6" fill="#E8590C" stroke="#0E2A24" stroke-width="3"/></svg>
+        <b>PeatWatch</b>
+      </div>
+      <h1>Jaga gambut tetap basah, <span>sebelum api datang.</span></h1>
+      <p class="lead">Konsep aplikasi pemantauan kawasan gambut rawan kebakaran untuk warga desa, Masyarakat Peduli Api, dan petugas lapangan. Data sensor kelembapan, satelit titik api, dan cuaca digabung menjadi satu status risiko yang mudah dipahami.</p>
+      <div class="cta">
+        <a class="btn btn-light" href="beranda.html">Coba prototipe
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></a>
+        <a class="btn btn-ghost" href="#layar">Lihat semua layar</a>
+      </div>
+    </div>
+    <ul class="feat" aria-label="Fitur utama">
+      <li><span class="ic" style="background:rgba(124,196,242,.15);color:#7CC4F2"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z"/></svg></span><div><strong>Monitoring kelembapan gambut</strong><small>Sensor lapangan &amp; tinggi muka air</small></div></li>
+      <li><span class="ic" style="background:rgba(255,138,61,.15);color:#FF8A3D"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2-6-2z"/><path d="M9 4v14M15 6v14"/></svg></span><div><strong>Peta kawasan rawan kebakaran</strong><small>Zona risiko, kanal, sensor, titik api</small></div></li>
+      <li><span class="ic" style="background:rgba(255,212,59,.15);color:#FFD43B"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></span><div><strong>Informasi kondisi cuaca</strong><small>Indeks cuaca kebakaran &amp; prakiraan</small></div></li>
+      <li><span class="ic" style="background:rgba(105,219,124,.15);color:#69DB7C"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></span><div><strong>Pelaporan kanal / lahan kering</strong><small>Foto, GPS, tetap jalan tanpa sinyal</small></div></li>
+      <li><span class="ic" style="background:rgba(255,107,107,.15);color:#FF6B6B"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.07-2.14-.22-4.05 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.15.43-2.29 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg></span><div><strong>Monitoring titik api</strong><small>Data satelit VIIRS &amp; MODIS</small></div></li>
+    </ul>
+  </div>
+</header>
+
+<section id="layar">
+  <p class="label">Prototipe interaktif</p>
+  <h2>6 layar utama</h2>
+  <p class="sub">Setiap layar bisa diklik langsung di bawah ini: nyalakan lapisan peta, ganti rentang waktu titik api, atau kirim laporan. Buka satu layar untuk mencobanya dalam ukuran penuh.</p>
+  <div class="screens">
+    <figure><div class="device"><iframe src="beranda.html" title="Layar Beranda" loading="lazy"></iframe></div><figcaption><a href="beranda.html">01 · Beranda</a><span>Status risiko hari ini &amp; ringkasan</span></figcaption></figure>
+    <figure><div class="device"><iframe src="peta.html" title="Layar Peta Rawan Kebakaran" loading="lazy"></iframe></div><figcaption><a href="peta.html">02 · Peta Rawan</a><span>Zona risiko, kanal, sensor, titik api</span></figcaption></figure>
+    <figure><div class="device"><iframe src="titik-api.html" title="Layar Monitoring Titik Api" loading="lazy"></iframe></div><figcaption><a href="titik-api.html">03 · Titik Api</a><span>Deteksi satelit &amp; status penanganan</span></figcaption></figure>
+    <figure><div class="device"><iframe src="sensor.html" title="Layar Kelembapan Gambut" loading="lazy"></iframe></div><figcaption><a href="sensor.html">04 · Kelembapan Gambut</a><span>Sensor tanah &amp; tinggi muka air</span></figcaption></figure>
+    <figure><div class="device"><iframe src="cuaca.html" title="Layar Cuaca dan Bahaya Api" loading="lazy"></iframe></div><figcaption><a href="cuaca.html">05 · Cuaca &amp; Bahaya Api</a><span>Indeks cuaca kebakaran &amp; prakiraan</span></figcaption></figure>
+    <figure><div class="device"><iframe src="lapor.html" title="Layar Lapor Kondisi Lahan" loading="lazy"></iframe></div><figcaption><a href="lapor.html">06 · Lapor</a><span>Laporan kanal &amp; lahan kering</span></figcaption></figure>
+  </div>
+</section>
+
+<section>
+  <div class="style-card">
+    <div>
+      <p class="label">Sistem visual</p>
+      <h2 style="font-size:24px">Style guide</h2>
+      <p class="sub" style="margin:0">Warna, skala risiko, tipografi Plus Jakarta Sans, komponen, dan prinsip desain.</p>
+    </div>
+    <div class="swatches" aria-hidden="true"><i style="background:#0E4D3F"></i><i style="background:#0E2A24"></i><i style="background:#E8590C"></i><i style="background:#1971C2"></i><i style="background:#F3F5F2;border:1px solid #D3DAD6"></i></div>
+    <a class="btn" style="background:var(--forest);color:#fff" href="style-guide.html">Buka style guide</a>
+  </div>
+</section>
+
+<footer>
+  PeatWatch adalah konsep desain untuk lomba UI/UX. Seluruh lokasi, angka sensor, dan data titik api di prototipe ini adalah contoh, bukan data nyata.
+</footer>
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0E4D3F">
+<title>PeatWatch · Lapor Kondisi Lahan</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+*{-webkit-tap-highlight-color:transparent}
+body{margin:0;background:#DCE3DF;font-family:'Plus Jakarta Sans',system-ui,sans-serif;min-height:100vh;display:flex;flex-direction:column;align-items:center}
+a{color:#0E4D3F}a:hover{color:#0A372D}
+textarea::placeholder,input::placeholder{color:#6B7A75}
+.topbar{width:100%;max-width:430px;box-sizing:border-box;display:flex;justify-content:space-between;align-items:center;padding:16px 20px;font-size:13px;font-weight:600}
+.topbar a{text-decoration:none;display:inline-flex;align-items:center;gap:6px;min-height:44px}
+.phone{width:390px;height:844px;border-radius:40px;overflow:hidden;box-shadow:0 30px 60px rgba(14,42,36,.25),0 0 0 10px #12201C;margin:10px 0 48px}
+.phone > div{width:100% !important}
+.scroll{scrollbar-width:none}.scroll::-webkit-scrollbar{display:none}
+button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid #1971C2;outline-offset:2px}
+@media (max-width:440px){
+  body{background:#F3F5F2}
+  .topbar{display:none}
+  .phone{width:100%;height:100vh;height:100dvh;border-radius:0;box-shadow:none;margin:0}
+  .phone > div{height:100% !important}
+}
+</style>
+</head>
+<body>
+<div class="topbar"><a href="index.html">← Semua layar</a><span style="color:#4A5A55">Lapor Kondisi Lahan</span></div>
+<main class="phone">
+<div style="width: 390px; height: 844px; position: relative; overflow: hidden; background: #F3F5F2; color: #12201C; font-family: 'Plus Jakarta Sans', system-ui, sans-serif">
+
+  <div id="form-view" style="height: 100%; position: relative">
+    <form class="scroll" style="height: 100%; overflow-y: auto; box-sizing: border-box; padding: 24px 20px 110px; display: flex; flex-direction: column; gap: 14px; margin: 0">
+      <header style="display: flex; align-items: center; gap: 12px">
+        <a href="beranda.html" aria-label="Tutup laporan" style="width: 44px; height: 44px; border-radius: 22px; border: 1px solid #E1E6E3; background: #FFFFFF; display: flex; align-items: center; justify-content: center; color: #12201C; flex-shrink: 0">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"></path></svg>
+        </a>
+        <div style="display: flex; flex-direction: column; gap: 2px">
+          <h1 style="margin: 0; font-size: 20px; font-weight: 800; letter-spacing: -0.01em">Lapor Kondisi Lahan</h1>
+          <span style="font-size: 12px; color: #5E6E69">Laporan Anda diteruskan ke posko terdekat</span>
+        </div>
+      </header>
+
+      <fieldset style="border: 0; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px">
+        <legend style="font-size: 13px; font-weight: 700; padding: 0; margin-bottom: 8px">Jenis laporan</legend>
+        <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px">
+          <button type="button" class="rtype" data-i="0" data-fire="0" aria-pressed="true" style="position: relative; height: 64px; border-radius: 16px; font: inherit; text-align: left; padding: 0 12px; display: flex; align-items: center; gap: 10px; cursor: pointer; color: #12201C"><span class="ricon" style="width: 36px; height: 36px; border-radius: 11px; display: flex; align-items: center; justify-content: center; flex-shrink: 0"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 6c.6.5 1.2 1 2.5 1C7 7 7 5 9.5 5c2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"></path><path d="M2 12c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"></path><path d="M2 18c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"></path></svg></span><span style="font-size: 13px; font-weight: 700; line-height: 1.25">Kanal kering</span></button>
+<button type="button" class="rtype" data-i="1" data-fire="0" aria-pressed="false" style="position: relative; height: 64px; border-radius: 16px; font: inherit; text-align: left; padding: 0 12px; display: flex; align-items: center; gap: 10px; cursor: pointer; color: #12201C"><span class="ricon" style="width: 36px; height: 36px; border-radius: 11px; display: flex; align-items: center; justify-content: center; flex-shrink: 0"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 20h20"></path><path d="m5 20 3-6 2 3 3-7 2 4 2-2 2 8"></path><circle cx="18" cy="5" r="2"></circle></svg></span><span style="font-size: 13px; font-weight: 700; line-height: 1.25">Lahan kering</span></button>
+<button type="button" class="rtype" data-i="2" data-fire="0" aria-pressed="false" style="position: relative; height: 64px; border-radius: 16px; font: inherit; text-align: left; padding: 0 12px; display: flex; align-items: center; gap: 10px; cursor: pointer; color: #12201C"><span class="ricon" style="width: 36px; height: 36px; border-radius: 11px; display: flex; align-items: center; justify-content: center; flex-shrink: 0"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3z"></path><path d="M12 9v4M12 17h.01"></path></svg></span><span style="font-size: 13px; font-weight: 700; line-height: 1.25">Sekat kanal rusak</span></button>
+<button type="button" class="rtype" data-i="3" data-fire="1" aria-pressed="false" style="position: relative; height: 64px; border-radius: 16px; font: inherit; text-align: left; padding: 0 12px; display: flex; align-items: center; gap: 10px; cursor: pointer; color: #12201C"><span class="ricon" style="width: 36px; height: 36px; border-radius: 11px; display: flex; align-items: center; justify-content: center; flex-shrink: 0"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.07-2.14-.22-4.05 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.15.43-2.29 1-3a2.5 2.5 0 0 0 2.5 2.5z"></path></svg></span><span style="font-size: 13px; font-weight: 700; line-height: 1.25">Asap / api kecil</span></button>
+        </div>
+      </fieldset>
+
+      <div style="display: flex; flex-direction: column; gap: 8px">
+        <span style="font-size: 13px; font-weight: 700">Lokasi</span>
+        <div style="display: flex; align-items: center; gap: 12px; background: #FFFFFF; border: 1px solid #E1E6E3; border-radius: 16px; padding: 10px">
+          <div aria-hidden="true" style="position: relative; width: 56px; height: 56px; border-radius: 12px; background: #DDE8D6; overflow: hidden; flex-shrink: 0">
+            <div style="position: absolute; left: -10px; top: 22px; width: 90px; height: 10px; background: #A9CFEA; transform: rotate(-20deg)"></div>
+            <div style="position: absolute; left: 22px; top: 18px; width: 14px; height: 14px; border-radius: 7px; background: #E8590C; border: 3px solid #FFFFFF"></div>
+          </div>
+          <div style="flex-grow: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px">
+            <span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500">−2.6512, 114.0835</span>
+            <span style="font-size: 12px; color: #5E6E69">Blok C-7 · Akurasi GPS ±8 m</span>
+          </div>
+          <button type="button" style="height: 36px; padding: 0 12px; border-radius: 10px; border: 1px solid #C9D2CD; background: #FFFFFF; font: inherit; font-size: 13px; font-weight: 700; color: #0E4D3F; cursor: pointer">Ubah</button>
+        </div>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 8px">
+        <span style="font-size: 13px; font-weight: 700">Foto bukti <span style="font-weight: 500; color: #5E6E69">(1 dari 3)</span></span>
+        <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px">
+          <div role="img" aria-label="Foto kanal kering terlampir" style="position: relative; height: 76px; border-radius: 14px; overflow: hidden; background: #8E6A47">
+            <div style="position: absolute; inset: 0; background: repeating-linear-gradient(135deg, #8E6A47 0 8px, #7A5A3C 8px 16px)"></div>
+            <span style="position: absolute; left: 6px; bottom: 6px; font-size: 11px; font-weight: 700; color: #FFFFFF; background: rgba(18, 32, 28, 0.7); padding: 2px 6px; border-radius: 6px">Foto kanal</span>
+          </div>
+          <button type="button" aria-label="Ambil foto kedua" style="height: 76px; border-radius: 14px; border: 1.5px dashed #9AA8A3; background: #FFFFFF; color: #4A5A55; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; font: inherit; font-size: 11px; font-weight: 600; cursor: pointer">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"></path><circle cx="12" cy="13" r="3"></circle></svg>
+            Ambil foto
+          </button>
+          <button type="button" aria-label="Pilih dari galeri" style="height: 76px; border-radius: 14px; border: 1.5px dashed #9AA8A3; background: #FFFFFF; color: #4A5A55; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; font: inherit; font-size: 11px; font-weight: 600; cursor: pointer">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"></rect><circle cx="9" cy="9" r="2"></circle><path d="m21 15-4-4L5 21"></path></svg>
+            Galeri
+          </button>
+        </div>
+      </div>
+
+      <fieldset style="border: 0; margin: 0; padding: 0">
+        <legend style="font-size: 13px; font-weight: 700; padding: 0; margin-bottom: 8px">Kondisi air kanal</legend>
+        <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 4px; background: #E6EBE8; padding: 4px; border-radius: 14px">
+          <button type="button" class="level" data-i="0" aria-pressed="true" style="height: 36px; border: 0; border-radius: 10px; font: inherit; font-size: 13px; font-weight: 700; cursor: pointer">Kering total</button>
+<button type="button" class="level" data-i="1" aria-pressed="false" style="height: 36px; border: 0; border-radius: 10px; font: inherit; font-size: 13px; font-weight: 700; cursor: pointer">Rendah</button>
+<button type="button" class="level" data-i="2" aria-pressed="false" style="height: 36px; border: 0; border-radius: 10px; font: inherit; font-size: 13px; font-weight: 700; cursor: pointer">Normal</button>
+        </div>
+      </fieldset>
+
+      <div style="display: flex; flex-direction: column; gap: 8px">
+        <label for="catatan" style="font-size: 13px; font-weight: 700">Catatan <span style="font-weight: 500; color: #5E6E69">(opsional)</span></label>
+        <textarea id="catatan" rows="3" placeholder="Contoh: Air kanal surut sejak 5 hari, tanah retak di sisi timur." style="border: 1px solid #C9D2CD; border-radius: 14px; padding: 10px 12px; font: inherit; font-size: 13px; color: #12201C; background: #FFFFFF; resize: none; height: 68px; box-sizing: border-box"></textarea>
+      </div>
+    </form>
+
+    <div style="position: absolute; left: 0; right: 0; bottom: 0; background: #FFFFFF; border-top: 1px solid #E1E6E3; padding: 12px 20px 26px; display: flex; flex-direction: column; gap: 8px">
+      <button type="button" id="send" style="height: 52px; border-radius: 16px; border: 0; background: #0E4D3F; color: #FFFFFF; font: inherit; font-size: 15px; font-weight: 800; display: flex; align-items: center; justify-content: center; gap: 8px; cursor: pointer">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m22 2-7 20-4-9-9-4z"></path><path d="M22 2 11 13"></path></svg>
+        Kirim Laporan
+      </button>
+      <span style="font-size: 11px; color: #5E6E69; text-align: center">Tanpa sinyal? Laporan disimpan dan terkirim otomatis saat online.</span>
+    </div>
+  </div>
+
+  <div id="sent-view" hidden style="height: 100%">
+    <div style="height: 100%; box-sizing: border-box; padding: 24px 24px 32px; display: flex; flex-direction: column; gap: 16px; justify-content: center; align-items: center; text-align: center">
+      <span style="width: 88px; height: 88px; border-radius: 44px; background: #E6F4E9; color: #237A35; display: flex; align-items: center; justify-content: center">
+        <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg>
+      </span>
+      <h1 style="margin: 0; font-size: 24px; font-weight: 800; letter-spacing: -0.01em">Laporan terkirim</h1>
+      <p style="margin: 0; font-size: 14px; line-height: 1.55; color: #4A5A55; max-width: 300px">Laporan <span id="type-label">kanal kering</span> Anda diterima posko MPA Sebangau Hilir. Tim akan memverifikasi dalam 2 jam.</p>
+      <div style="width: 100%; background: #FFFFFF; border: 1px solid #E1E6E3; border-radius: 16px; padding: 14px 16px; display: flex; justify-content: space-between; align-items: center; box-sizing: border-box">
+        <span style="font-size: 13px; color: #5E6E69">Nomor laporan</span>
+        <span style="font-family: 'IBM Plex Mono', monospace; font-size: 14px; font-weight: 500">LP-2611-0142</span>
+      </div>
+      <div style="width: 100%; display: flex; flex-direction: column; gap: 10px; margin-top: 8px">
+        <a href="beranda.html" style="height: 52px; border-radius: 16px; background: #0E4D3F; color: #FFFFFF; text-decoration: none; font-size: 15px; font-weight: 800; display: flex; align-items: center; justify-content: center">Kembali ke Beranda</a>
+        <button type="button" id="reset" style="height: 48px; border-radius: 16px; border: 1px solid #C9D2CD; background: #FFFFFF; color: #12201C; font: inherit; font-size: 14px; font-weight: 700; cursor: pointer">Buat laporan lain</button>
+      </div>
+    </div>
+  </div>
+</div>
+</main>
+<script>
+function segment(cls,onPick){const bs=[...document.querySelectorAll('.'+cls)];
+function paint(){bs.forEach(b=>{const on=b.getAttribute('aria-pressed')==='true';b.style.background=on?'#FFFFFF':'transparent';
+b.style.color=on?'#12201C':'#4A5A55';b.style.boxShadow=on?'0 1px 4px rgba(18,32,28,0.12)':'none';});}
+bs.forEach(b=>b.addEventListener('click',()=>{bs.forEach(x=>x.setAttribute('aria-pressed',x===b?'true':'false'));paint();onPick&&onPick(+b.dataset.i);}));paint();}
+
+const types=[...document.querySelectorAll('.rtype')];
+function paintTypes(){types.forEach(b=>{const on=b.getAttribute('aria-pressed')==='true',fire=b.dataset.fire==='1',ic=b.querySelector('.ricon');
+b.style.background=on?'#E8F2EE':'#FFFFFF';b.style.border='2px solid '+(on?'#0E4D3F':'#E1E6E3');
+ic.style.background=fire?'#FFF0E6':(on?'#0E4D3F':'#EEF1EF');ic.style.color=fire?'#C2410C':(on?'#FFFFFF':'#4A5A55');});}
+types.forEach(b=>b.addEventListener('click',()=>{types.forEach(x=>x.setAttribute('aria-pressed',x===b?'true':'false'));paintTypes();}));
+paintTypes();segment('level');
+const fv=document.getElementById('form-view'),sv=document.getElementById('sent-view');
+document.getElementById('send').addEventListener('click',()=>{const t=types.find(b=>b.getAttribute('aria-pressed')==='true');
+document.getElementById('type-label').textContent=t.textContent.trim().toLowerCase();fv.hidden=true;sv.hidden=false;});
+document.getElementById('reset').addEventListener('click',()=>{sv.hidden=true;fv.hidden=false;types[0].click();document.querySelector('.level').click();});
+</script>
+</body>
+</html>

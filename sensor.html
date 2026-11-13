@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0E4D3F">
+<title>PeatWatch · Kelembapan Gambut</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+*{-webkit-tap-highlight-color:transparent}
+body{margin:0;background:#DCE3DF;font-family:'Plus Jakarta Sans',system-ui,sans-serif;min-height:100vh;display:flex;flex-direction:column;align-items:center}
+a{color:#0E4D3F}a:hover{color:#0A372D}
+textarea::placeholder,input::placeholder{color:#6B7A75}
+.topbar{width:100%;max-width:430px;box-sizing:border-box;display:flex;justify-content:space-between;align-items:center;padding:16px 20px;font-size:13px;font-weight:600}
+.topbar a{text-decoration:none;display:inline-flex;align-items:center;gap:6px;min-height:44px}
+.phone{width:390px;height:844px;border-radius:40px;overflow:hidden;box-shadow:0 30px 60px rgba(14,42,36,.25),0 0 0 10px #12201C;margin:10px 0 48px}
+.phone > div{width:100% !important}
+.scroll{scrollbar-width:none}.scroll::-webkit-scrollbar{display:none}
+button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid #1971C2;outline-offset:2px}
+@media (max-width:440px){
+  body{background:#F3F5F2}
+  .topbar{display:none}
+  .phone{width:100%;height:100vh;height:100dvh;border-radius:0;box-shadow:none;margin:0}
+  .phone > div{height:100% !important}
+}
+</style>
+</head>
+<body>
+<div class="topbar"><a href="index.html">← Semua layar</a><span style="color:#4A5A55">Kelembapan Gambut</span></div>
+<main class="phone">
+<div style="width: 390px; height: 844px; position: relative; overflow: hidden; background: #F3F5F2; color: #12201C; font-family: 'Plus Jakarta Sans', system-ui, sans-serif">
+  <div class="scroll" style="height: 100%; overflow-y: auto; box-sizing: border-box; padding: 28px 20px 110px; display: flex; flex-direction: column; gap: 14px">
+
+    <header style="display: flex; flex-direction: column; gap: 2px">
+      <h1 style="margin: 0; font-size: 24px; font-weight: 800; letter-spacing: -0.02em">Kelembapan Gambut</h1>
+      <span style="font-size: 13px; color: #5E6E69">Data sensor lapangan · 14 stasiun aktif</span>
+    </header>
+
+    <button style="display: flex; align-items: center; gap: 12px; background: #FFFFFF; border: 1px solid #E1E6E3; border-radius: 16px; padding: 12px 14px; font: inherit; color: #12201C; text-align: left; cursor: pointer">
+      <span style="width: 40px; height: 40px; border-radius: 12px; background: #E7F1FB; color: #1971C2; display: flex; align-items: center; justify-content: center; flex-shrink: 0">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.9 19.1a10 10 0 0 1 0-14.2M7.8 16.2a6 6 0 0 1 0-8.4M16.2 7.8a6 6 0 0 1 0 8.4M19.1 4.9a10 10 0 0 1 0 14.2"></path><circle cx="12" cy="12" r="2"></circle></svg>
+      </span>
+      <span style="flex-grow: 1; display: flex; flex-direction: column; gap: 2px">
+        <span style="font-size: 14px; font-weight: 700">Stasiun SG-07 · Blok C-7</span>
+        <span style="font-size: 12px; color: #5E6E69; display: flex; align-items: center; gap: 6px"><span style="width: 8px; height: 8px; border-radius: 4px; background: #2F9E44"></span>Online · data 5 menit lalu</span>
+      </span>
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#5E6E69" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg>
+    </button>
+
+    <section aria-label="Kondisi saat ini" style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px">
+      <div style="background: #FFFFFF; border: 1px solid #E1E6E3; border-radius: 18px; padding: 14px; display: flex; flex-direction: column; gap: 6px; align-items: center">
+        <span style="align-self: flex-start; font-size: 12px; font-weight: 600; color: #5E6E69">Kelembapan tanah</span>
+        <svg width="140" height="82" viewBox="0 0 220 128" role="img" aria-label="Pengukur kelembapan 38 persen, status waspada">
+          <path d="M20 110 A90 90 0 0 1 57.1 37.2" fill="none" stroke="#C92A2A" stroke-width="16"></path>
+          <path d="M57.1 37.2 A90 90 0 0 1 110 20" fill="none" stroke="#E8590C" stroke-width="16"></path>
+          <path d="M110 20 A90 90 0 0 1 200 110" fill="none" stroke="#2F9E44" stroke-width="16"></path>
+          <circle cx="76.9" cy="26.3" r="11" fill="#FFFFFF" stroke="#12201C" stroke-width="4"></circle>
+          <text x="110" y="104" text-anchor="middle" font-family="Plus Jakarta Sans, sans-serif" font-size="38" font-weight="800" fill="#12201C">38%</text>
+        </svg>
+        <span style="font-size: 11px; font-weight: 700; color: #C2410C; background: #FFF0E6; padding: 4px 10px; border-radius: 999px">Waspada</span>
+        <span style="font-size: 11px; color: #5E6E69; text-align: center">Aman bila ≥ 50%</span>
+      </div>
+
+      <div style="background: #FFFFFF; border: 1px solid #E1E6E3; border-radius: 18px; padding: 14px; display: flex; flex-direction: column; gap: 8px">
+        <span style="font-size: 12px; font-weight: 600; color: #5E6E69">Tinggi muka air</span>
+        <div style="display: flex; gap: 8px; align-items: stretch">
+          <div role="img" aria-label="Profil tanah: muka air di minus 52 cm, batas aman minus 40 cm" style="position: relative; width: 52px; height: 120px; border-radius: 10px; overflow: hidden; background: #7A5A3C; flex-shrink: 0">
+            <div style="position: absolute; left: 0; right: 0; top: 0; height: 10px; background: #4E7A3A"></div>
+            <div style="position: absolute; left: 0; right: 0; top: 10px; height: 52px; background: #8E6A47"></div>
+            <div style="position: absolute; left: 0; right: 0; top: 62px; bottom: 0; background: #4E91C6"></div>
+            <div style="position: absolute; left: 0; right: 0; top: 48px; border-top: 2px dashed #FFFFFF"></div>
+          </div>
+          <div style="position: relative; flex-grow: 1; height: 120px; font-size: 11px">
+            <span style="position: absolute; top: 0; left: 0; color: #5E6E69">0 cm</span>
+            <span style="position: absolute; top: 38px; left: 0; color: #237A35; font-weight: 700">−40 batas</span>
+            <span style="position: absolute; top: 58px; left: 0; color: #1864AB; font-weight: 700">−52 kini</span>
+            <span style="position: absolute; bottom: 0; left: 0; color: #5E6E69">−100 cm</span>
+          </div>
+        </div>
+        <span style="font-size: 11px; color: #C92A2A; font-weight: 600">12 cm di bawah batas aman</span>
+      </div>
+    </section>
+
+    <section aria-labelledby="trend-title" style="background: #FFFFFF; border: 1px solid #E1E6E3; border-radius: 18px; padding: 14px 16px; display: flex; flex-direction: column; gap: 8px">
+      <div style="display: flex; justify-content: space-between; align-items: baseline">
+        <h2 id="trend-title" style="margin: 0; font-size: 15px; font-weight: 700">Tren 7 hari</h2>
+        <span style="font-size: 12px; color: #C2410C; font-weight: 700">−14 poin</span>
+      </div>
+      <svg width="318" height="120" viewBox="0 0 352 120" role="img" aria-label="Grafik kelembapan 7 hari turun dari 52 ke 38 persen">
+        <line x1="0" y1="40" x2="352" y2="40" stroke="#2F9E44" stroke-width="1.5" stroke-dasharray="5 5"></line>
+        <text x="350" y="34" text-anchor="end" font-family="Plus Jakarta Sans, sans-serif" font-size="11" font-weight="700" fill="#237A35">Aman 50%</text>
+        <line x1="0" y1="100" x2="352" y2="100" stroke="#C92A2A" stroke-width="1.5" stroke-dasharray="5 5"></line>
+        <text x="350" y="116" text-anchor="end" font-family="Plus Jakarta Sans, sans-serif" font-size="11" font-weight="700" fill="#C92A2A">Kritis 30%</text>
+        <path d="M20 34 L72 43 L124 49 L176 55 L228 58 L280 64 L332 76 L332 100 L20 100 Z" fill="#1971C2" fill-opacity="0.1"></path>
+        <path d="M20 34 L72 43 L124 49 L176 55 L228 58 L280 64 L332 76" fill="none" stroke="#1971C2" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+        <circle cx="20" cy="34" r="4" fill="#1971C2"></circle>
+        <circle cx="332" cy="76" r="6" fill="#FFFFFF" stroke="#1971C2" stroke-width="3"></circle>
+      </svg>
+      <div style="display: flex; justify-content: space-between; font-size: 11px; color: #5E6E69; padding: 0 4px">
+        <span>Sab</span><span>Min</span><span>Sen</span><span>Sel</span><span>Rab</span><span>Kam</span><span style="font-weight: 700; color: #12201C">Hari ini</span>
+      </div>
+    </section>
+
+    <section aria-labelledby="st-title" style="display: flex; flex-direction: column; gap: 10px">
+      <h2 id="st-title" style="margin: 0; font-size: 16px; font-weight: 700">Stasiun sekitar</h2>
+      <div style="background: #FFFFFF; border: 1px solid #E1E6E3; border-radius: 18px; display: flex; flex-direction: column">
+        <div style="display: flex; align-items: center; gap: 12px; padding: 12px 16px; border-bottom: 1px solid #EEF1EF">
+          <span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; width: 52px">SG-11</span>
+          <span style="flex-grow: 1; font-size: 13px; color: #4A5A55">Blok C-9 · TMA −71 cm</span>
+          <span style="font-size: 15px; font-weight: 800; color: #C92A2A">27%</span>
+          <span style="font-size: 11px; font-weight: 700; color: #C92A2A; background: #FDE8E8; padding: 4px 8px; border-radius: 999px; width: 52px; text-align: center">Kritis</span>
+        </div>
+        <div style="display: flex; align-items: center; gap: 12px; padding: 12px 16px; border-bottom: 1px solid #EEF1EF">
+          <span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; width: 52px">SG-04</span>
+          <span style="flex-grow: 1; font-size: 13px; color: #4A5A55">Blok B-2 · TMA −44 cm</span>
+          <span style="font-size: 15px; font-weight: 800; color: #C2410C">43%</span>
+          <span style="font-size: 11px; font-weight: 700; color: #C2410C; background: #FFF0E6; padding: 4px 8px; border-radius: 999px; width: 52px; text-align: center">Waspada</span>
+        </div>
+        <div style="display: flex; align-items: center; gap: 12px; padding: 12px 16px">
+          <span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; width: 52px">SG-03</span>
+          <span style="flex-grow: 1; font-size: 13px; color: #4A5A55">Blok A-2 · TMA −31 cm</span>
+          <span style="font-size: 15px; font-weight: 800; color: #237A35">56%</span>
+          <span style="font-size: 11px; font-weight: 700; color: #237A35; background: #E6F4E9; padding: 4px 8px; border-radius: 999px; width: 52px; text-align: center">Aman</span>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <nav aria-label="Navigasi utama" style="position: absolute; left: 0; right: 0; bottom: 0; height: 88px; background: #FFFFFF; border-top: 1px solid #E1E6E3; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); padding: 6px 8px 0; box-sizing: border-box">
+    <a href="beranda.html" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; height: 52px; text-decoration: none; color: #5E6E69; font-size: 11px; font-weight: 600">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"></path></svg>
+      Beranda
+    </a>
+    <a href="peta.html" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; height: 52px; text-decoration: none; color: #5E6E69; font-size: 11px; font-weight: 600">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2-6-2z"></path><path d="M9 4v14M15 6v14"></path></svg>
+      Peta
+    </a>
+    <a href="lapor.html" style="display: flex; flex-direction: column; align-items: center; justify-content: flex-end; gap: 4px; height: 52px; text-decoration: none; color: #12201C; font-size: 11px; font-weight: 700">
+      <span style="width: 52px; height: 52px; border-radius: 18px; background: #E8590C; color: #FFFFFF; display: flex; align-items: center; justify-content: center; margin-top: -24px; box-shadow: 0 8px 18px rgba(232, 89, 12, 0.32)">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg>
+      </span>
+      Lapor
+    </a>
+    <a href="titik-api.html" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; height: 52px; text-decoration: none; color: #5E6E69; font-size: 11px; font-weight: 600">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.07-2.14-.22-4.05 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.15.43-2.29 1-3a2.5 2.5 0 0 0 2.5 2.5z"></path></svg>
+      Titik Api
+    </a>
+    <a href="sensor.html" aria-current="page" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; height: 52px; text-decoration: none; color: #0E4D3F; font-size: 11px; font-weight: 700">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.9 19.1a10 10 0 0 1 0-14.2M7.8 16.2a6 6 0 0 1 0-8.4M16.2 7.8a6 6 0 0 1 0 8.4M19.1 4.9a10 10 0 0 1 0 14.2"></path><circle cx="12" cy="12" r="2"></circle></svg>
+      Sensor
+    </a>
+  </nav>
+</div>
+</main>
+
+</body>
+</html>

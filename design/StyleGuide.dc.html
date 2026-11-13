@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<title>PeatWatch Style Guide</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#0E4D3F}a:hover{color:#0A372D}
+</style>
+</helmet>
+<div style="width: 1200px; height: 844px; box-sizing: border-box; padding: 56px; background: #F3F5F2; color: #12201C; font-family: 'Plus Jakarta Sans', system-ui, sans-serif; display: grid; grid-template-columns: 360px minmax(0, 1fr); gap: 56px">
+
+  <div style="display: flex; flex-direction: column; gap: 20px">
+    <div style="display: flex; align-items: center; gap: 16px">
+      <svg width="72" height="72" viewBox="0 0 72 72" role="img" aria-label="Logo PeatWatch">
+        <rect width="72" height="72" rx="22" fill="#0E4D3F"></rect>
+        <path d="M36 14c-6 9-14 16-14 26a14 14 0 0 0 28 0c0-10-8-17-14-26z" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linejoin="round"></path>
+        <path d="M26 42c3 2 6 2 10 0s7-2 10 0" fill="none" stroke="#7CC4F2" stroke-width="4" stroke-linecap="round"></path>
+        <circle cx="54" cy="18" r="6" fill="#E8590C" stroke="#0E4D3F" stroke-width="3"></circle>
+      </svg>
+      <div style="display: flex; flex-direction: column">
+        <span style="font-size: 36px; font-weight: 800; letter-spacing: -0.03em; line-height: 1.05">PeatWatch</span>
+        <span style="font-size: 15px; font-weight: 600; color: #4A5A55">Smart Peatland Protection</span>
+      </div>
+    </div>
+    <p style="margin: 0; font-size: 15px; line-height: 1.6; color: #2C3B36">Aplikasi pemantauan kawasan gambut rawan kebakaran untuk warga desa, Masyarakat Peduli Api, dan petugas lapangan. Data sensor kelembapan, satelit titik api, dan cuaca digabung menjadi satu status risiko yang mudah dipahami.</p>
+
+    <div style="display: flex; flex-direction: column; gap: 12px">
+      <span style="font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #5E6E69">Prinsip desain</span>
+      <div style="display: flex; gap: 12px; align-items: flex-start">
+        <span style="width: 28px; height: 28px; border-radius: 9px; background: #0E4D3F; color: #FFFFFF; font-size: 13px; font-weight: 800; display: flex; align-items: center; justify-content: center; flex-shrink: 0">1</span>
+        <div style="display: flex; flex-direction: column; gap: 2px"><span style="font-size: 14px; font-weight: 700">Status dulu, detail kemudian</span><span style="font-size: 13px; color: #4A5A55; line-height: 1.5">Satu kata risiko di layar utama, angka sensor satu ketukan di bawahnya.</span></div>
+      </div>
+      <div style="display: flex; gap: 12px; align-items: flex-start">
+        <span style="width: 28px; height: 28px; border-radius: 9px; background: #0E4D3F; color: #FFFFFF; font-size: 13px; font-weight: 800; display: flex; align-items: center; justify-content: center; flex-shrink: 0">2</span>
+        <div style="display: flex; flex-direction: column; gap: 2px"><span style="font-size: 14px; font-weight: 700">Terbaca di bawah terik</span><span style="font-size: 13px; color: #4A5A55; line-height: 1.5">Kontras teks minimal 4.5:1 dan target sentuh 44 px untuk pemakaian di lapangan.</span></div>
+      </div>
+      <div style="display: flex; gap: 12px; align-items: flex-start">
+        <span style="width: 28px; height: 28px; border-radius: 9px; background: #0E4D3F; color: #FFFFFF; font-size: 13px; font-weight: 800; display: flex; align-items: center; justify-content: center; flex-shrink: 0">3</span>
+        <div style="display: flex; flex-direction: column; gap: 2px"><span style="font-size: 14px; font-weight: 700">Tetap berfungsi tanpa sinyal</span><span style="font-size: 13px; color: #4A5A55; line-height: 1.5">Laporan disimpan di perangkat dan dikirim otomatis saat jaringan kembali.</span></div>
+      </div>
+      <div style="display: flex; gap: 12px; align-items: flex-start">
+        <span style="width: 28px; height: 28px; border-radius: 9px; background: #0E4D3F; color: #FFFFFF; font-size: 13px; font-weight: 800; display: flex; align-items: center; justify-content: center; flex-shrink: 0">4</span>
+        <div style="display: flex; flex-direction: column; gap: 2px"><span style="font-size: 14px; font-weight: 700">Warna bukan satu-satunya sinyal</span><span style="font-size: 13px; color: #4A5A55; line-height: 1.5">Setiap level risiko selalu disertai label teks dan posisi pada skala.</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div style="display: flex; flex-direction: column; gap: 28px">
+    <section style="display: flex; flex-direction: column; gap: 12px">
+      <h2 style="margin: 0; font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #5E6E69">Warna</h2>
+      <div style="display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 12px">
+        <div style="display: flex; flex-direction: column; gap: 8px"><div style="height: 72px; border-radius: 16px; background: #0E4D3F"></div><span style="font-size: 13px; font-weight: 700">Hutan Gambut</span><span style="font-size: 12px; color: #5E6E69; font-family: 'IBM Plex Mono', monospace">#0E4D3F</span></div>
+        <div style="display: flex; flex-direction: column; gap: 8px"><div style="height: 72px; border-radius: 16px; background: #0E2A24"></div><span style="font-size: 13px; font-weight: 700">Gambut Malam</span><span style="font-size: 12px; color: #5E6E69; font-family: 'IBM Plex Mono', monospace">#0E2A24</span></div>
+        <div style="display: flex; flex-direction: column; gap: 8px"><div style="height: 72px; border-radius: 16px; background: #E8590C"></div><span style="font-size: 13px; font-weight: 700">Bara</span><span style="font-size: 12px; color: #5E6E69; font-family: 'IBM Plex Mono', monospace">#E8590C</span></div>
+        <div style="display: flex; flex-direction: column; gap: 8px"><div style="height: 72px; border-radius: 16px; background: #1971C2"></div><span style="font-size: 13px; font-weight: 700">Air Kanal</span><span style="font-size: 12px; color: #5E6E69; font-family: 'IBM Plex Mono', monospace">#1971C2</span></div>
+        <div style="display: flex; flex-direction: column; gap: 8px"><div style="height: 72px; border-radius: 16px; background: #F3F5F2; border: 1px solid #D3DAD6; box-sizing: border-box"></div><span style="font-size: 13px; font-weight: 700">Embun</span><span style="font-size: 12px; color: #5E6E69; font-family: 'IBM Plex Mono', monospace">#F3F5F2</span></div>
+      </div>
+    </section>
+
+    <section style="display: flex; flex-direction: column; gap: 12px">
+      <h2 style="margin: 0; font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #5E6E69">Skala risiko kebakaran</h2>
+      <div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px">
+        <div style="border-radius: 14px; background: #E6F4E9; padding: 12px 14px; display: flex; flex-direction: column; gap: 4px; border-top: 6px solid #2F9E44"><span style="font-size: 15px; font-weight: 800; color: #237A35">1 · Rendah</span><span style="font-size: 12px; color: #2C3B36">Kelembapan ≥ 50%</span></div>
+        <div style="border-radius: 14px; background: #FFF6DB; padding: 12px 14px; display: flex; flex-direction: column; gap: 4px; border-top: 6px solid #E0A800"><span style="font-size: 15px; font-weight: 800; color: #8A6100">2 · Sedang</span><span style="font-size: 12px; color: #2C3B36">TMA mendekati −40 cm</span></div>
+        <div style="border-radius: 14px; background: #FFF0E6; padding: 12px 14px; display: flex; flex-direction: column; gap: 4px; border-top: 6px solid #E8590C"><span style="font-size: 15px; font-weight: 800; color: #C2410C">3 · Tinggi</span><span style="font-size: 12px; color: #2C3B36">TMA &lt; −40 cm, kering</span></div>
+        <div style="border-radius: 14px; background: #FDE8E8; padding: 12px 14px; display: flex; flex-direction: column; gap: 4px; border-top: 6px solid #C92A2A"><span style="font-size: 15px; font-weight: 800; color: #C92A2A">4 · Ekstrem</span><span style="font-size: 12px; color: #2C3B36">Ada titik api aktif</span></div>
+      </div>
+    </section>
+
+    <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px">
+      <section style="display: flex; flex-direction: column; gap: 10px">
+        <h2 style="margin: 0; font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #5E6E69">Tipografi · Plus Jakarta Sans</h2>
+        <div style="display: flex; align-items: baseline; justify-content: space-between; border-bottom: 1px solid #E1E6E3; padding-bottom: 8px"><span style="font-size: 40px; font-weight: 800; letter-spacing: -0.02em; line-height: 1.1">Tinggi</span><span style="font-size: 12px; color: #5E6E69">Display 40 / 800</span></div>
+        <div style="display: flex; align-items: baseline; justify-content: space-between; border-bottom: 1px solid #E1E6E3; padding-bottom: 8px"><span style="font-size: 24px; font-weight: 800; letter-spacing: -0.02em">Titik Api</span><span style="font-size: 12px; color: #5E6E69">Judul 24 / 800</span></div>
+        <div style="display: flex; align-items: baseline; justify-content: space-between; border-bottom: 1px solid #E1E6E3; padding-bottom: 8px"><span style="font-size: 14px; font-weight: 600">Kanal primer K-3 mengering</span><span style="font-size: 12px; color: #5E6E69">Isi 14 / 600</span></div>
+        <div style="display: flex; align-items: baseline; justify-content: space-between; border-bottom: 1px solid #E1E6E3; padding-bottom: 8px"><span style="font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase">Risiko hari ini</span><span style="font-size: 12px; color: #5E6E69">Label 11 / 700</span></div>
+        <div style="display: flex; align-items: baseline; justify-content: space-between"><span style="font-size: 13px; font-family: 'IBM Plex Mono', monospace; font-weight: 500">−2.6431, 114.0712</span><span style="font-size: 12px; color: #5E6E69">Data · IBM Plex Mono</span></div>
+      </section>
+
+      <section style="display: flex; flex-direction: column; gap: 12px">
+        <h2 style="margin: 0; font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #5E6E69">Komponen</h2>
+        <div style="display: flex; gap: 10px; flex-wrap: wrap; align-items: center">
+          <button style="height: 48px; padding: 0 20px; border-radius: 14px; border: 0; background: #0E4D3F; color: #FFFFFF; font: inherit; font-size: 14px; font-weight: 700">Kirim Laporan</button>
+          <button style="height: 48px; padding: 0 20px; border-radius: 14px; border: 1px solid #C9D2CD; background: #FFFFFF; color: #12201C; font: inherit; font-size: 14px; font-weight: 700">Arahkan</button>
+          <button aria-label="Lapor" style="width: 52px; height: 52px; border-radius: 18px; border: 0; background: #E8590C; color: #FFFFFF; display: flex; align-items: center; justify-content: center; box-shadow: 0 8px 18px rgba(232, 89, 12, 0.32)">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg>
+          </button>
+        </div>
+        <div style="display: flex; gap: 8px; flex-wrap: wrap">
+          <span style="height: 36px; padding: 0 12px; border-radius: 999px; background: #12201C; color: #FFFFFF; font-size: 13px; font-weight: 600; display: flex; align-items: center; gap: 6px"><span style="width: 10px; height: 10px; border-radius: 5px; background: #E8590C"></span>Titik api</span>
+          <span style="height: 36px; padding: 0 12px; border-radius: 999px; background: #FFFFFF; border: 1px solid #D3DAD6; color: #12201C; font-size: 13px; font-weight: 600; display: flex; align-items: center; gap: 6px"><span style="width: 10px; height: 10px; border-radius: 5px; background: #1971C2"></span>Sensor</span>
+        </div>
+        <div style="display: flex; gap: 6px; flex-wrap: wrap">
+          <span style="font-size: 11px; font-weight: 700; color: #237A35; background: #E6F4E9; padding: 4px 8px; border-radius: 999px">Diverifikasi</span>
+          <span style="font-size: 11px; font-weight: 700; color: #8A6100; background: #FFF6DB; padding: 4px 8px; border-radius: 999px">Menunggu</span>
+          <span style="font-size: 11px; font-weight: 700; color: #1864AB; background: #E7F1FB; padding: 4px 8px; border-radius: 999px">Tim menuju lokasi</span>
+          <span style="font-size: 11px; font-weight: 700; color: #C92A2A; background: #FDE8E8; padding: 4px 8px; border-radius: 999px">Kepercayaan tinggi</span>
+        </div>
+        <div style="display: flex; gap: 10px; color: #12201C; margin-top: 4px">
+          <span style="width: 40px; height: 40px; border-radius: 12px; background: #FFFFFF; border: 1px solid #E1E6E3; display: flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.07-2.14-.22-4.05 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.15.43-2.29 1-3a2.5 2.5 0 0 0 2.5 2.5z"></path></svg></span>
+          <span style="width: 40px; height: 40px; border-radius: 12px; background: #FFFFFF; border: 1px solid #E1E6E3; display: flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z"></path></svg></span>
+          <span style="width: 40px; height: 40px; border-radius: 12px; background: #FFFFFF; border: 1px solid #E1E6E3; display: flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2-6-2z"></path><path d="M9 4v14M15 6v14"></path></svg></span>
+          <span style="width: 40px; height: 40px; border-radius: 12px; background: #FFFFFF; border: 1px solid #E1E6E3; display: flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.9 19.1a10 10 0 0 1 0-14.2M7.8 16.2a6 6 0 0 1 0-8.4M16.2 7.8a6 6 0 0 1 0 8.4M19.1 4.9a10 10 0 0 1 0 14.2"></path><circle cx="12" cy="12" r="2"></circle></svg></span>
+          <span style="width: 40px; height: 40px; border-radius: 12px; background: #FFFFFF; border: 1px solid #E1E6E3; display: flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 6c.6.5 1.2 1 2.5 1C7 7 7 5 9.5 5c2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"></path><path d="M2 12c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"></path><path d="M2 18c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"></path></svg></span>
+          <span style="width: 40px; height: 40px; border-radius: 12px; background: #FFFFFF; border: 1px solid #E1E6E3; display: flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2v2M4.93 4.93l1.41 1.41M20 12h2M19.07 4.93l-1.41 1.41M15.95 12.65a4 4 0 0 0-5.93-4.13"></path><path d="M13 22H7a5 5 0 1 1 4.9-6H13a3 3 0 0 1 0 6z"></path></svg></span>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1200,"height":844}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {};
+  }
+}
+</script>
+</body>
+</html>

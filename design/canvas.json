@@ -1,0 +1,21 @@
+{
+  "v": 3,
+  "createdOnFiles": {"v": 1, "at": "2026-11-13T09:00:00Z"},
+  "title": "PeatWatch App Design",
+  "launch": {"view": "canvas"},
+  "pages": [],
+  "boards": {
+    "Main.dc.html": {"x": 0, "y": 0, "w": 390, "h": 844, "title": "01 Beranda", "is_interactive": true, "radius": 40},
+    "Peta.dc.html": {"x": 470, "y": 0, "w": 390, "h": 844, "title": "02 Peta Rawan Kebakaran", "is_interactive": true, "radius": 40},
+    "TitikApi.dc.html": {"x": 940, "y": 0, "w": 390, "h": 844, "title": "03 Monitoring Titik Api", "is_interactive": true, "radius": 40},
+    "Kelembapan.dc.html": {"x": 1410, "y": 0, "w": 390, "h": 844, "title": "04 Kelembapan Gambut", "is_interactive": true, "radius": 40},
+    "Cuaca.dc.html": {"x": 1880, "y": 0, "w": 390, "h": 844, "title": "05 Cuaca & Bahaya Api", "is_interactive": true, "radius": 40},
+    "Lapor.dc.html": {"x": 2350, "y": 0, "w": 390, "h": 844, "title": "06 Pelaporan Kanal / Lahan", "is_interactive": true, "radius": 40},
+    "StyleGuide.dc.html": {"x": 0, "y": 964, "w": 1200, "h": 844, "title": "Style Guide"}
+  },
+  "order": ["Main.dc.html", "Peta.dc.html", "TitikApi.dc.html", "Kelembapan.dc.html", "Cuaca.dc.html", "Lapor.dc.html", "StyleGuide.dc.html"],
+  "notes": {
+    "title": {"x": 0, "y": -300, "text": "PeatWatch — Smart Peatland Protection", "kind": "title1", "maxW": 2740}
+  },
+  "designSystems": []
+}
