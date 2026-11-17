@@ -42,7 +42,7 @@
       "y": 0,
       "w": 390,
       "h": 844,
-      "title": "04 Kelembapan Gambut",
+      "title": "04 Kelembapan Gambut (dari Beranda)",
       "is_interactive": true,
       "radius": 40
     },
@@ -79,6 +79,15 @@
       "title": "07 Detail Titik Api",
       "is_interactive": true,
       "radius": 40
+    },
+    "Berita.dc.html": {
+      "x": 3290,
+      "y": 0,
+      "w": 390,
+      "h": 844,
+      "title": "09 Berita & Peringatan",
+      "is_interactive": true,
+      "radius": 40
     }
   },
   "order": [
@@ -89,6 +98,7 @@
     "Cuaca.dc.html",
     "Lapor.dc.html",
     "TitikApiDetail.dc.html",
+    "Berita.dc.html",
     "StyleGuide.dc.html"
   ],
   "notes": {
@@ -97,7 +107,7 @@
       "y": -300,
       "text": "PeatWatch — Smart Peatland Protection",
       "kind": "title1",
-      "maxW": 3210
+      "maxW": 3680
     }
   },
   "designSystems": []

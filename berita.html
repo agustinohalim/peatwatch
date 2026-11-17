@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0E4D3F">
+<title>PeatWatch · Berita & Peringatan</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+*{-webkit-tap-highlight-color:transparent}
+body{margin:0;background:#DCE3DF;font-family:'Plus Jakarta Sans',system-ui,sans-serif;min-height:100vh;display:flex;flex-direction:column;align-items:center}
+a{color:#0E4D3F}a:hover{color:#0A372D}
+textarea::placeholder,input::placeholder{color:#6B7A75}
+.topbar{width:100%;max-width:430px;box-sizing:border-box;display:flex;justify-content:space-between;align-items:center;padding:16px 20px;font-size:13px;font-weight:600}
+.topbar a{text-decoration:none;display:inline-flex;align-items:center;gap:6px;min-height:44px}
+.phone{width:390px;height:844px;border-radius:40px;overflow:hidden;box-shadow:0 30px 60px rgba(14,42,36,.25),0 0 0 10px #12201C;margin:10px 0 48px}
+.phone > div{width:100% !important}
+.scroll{scrollbar-width:none}.scroll::-webkit-scrollbar{display:none}
+button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid #1971C2;outline-offset:2px}
+@media (max-width:440px){
+  body{background:#F3F5F2}
+  .topbar{display:none}
+  .phone{width:100%;height:100vh;height:100dvh;border-radius:0;box-shadow:none;margin:0}
+  .phone > div{height:100% !important}
+}
+</style>
+</head>
+<body>
+<div class="topbar"><a href="index.html">← Semua layar</a><span style="color:#4A5A55">Berita & Peringatan</span></div>
+<main class="phone">
+<div style="width: 390px; height: 844px; position: relative; overflow: hidden; background: #F3F5F2; color: #12201C; font-family: 'Plus Jakarta Sans', system-ui, sans-serif">
+  <div class="scroll" style="height: 100%; overflow-y: auto; box-sizing: border-box; padding: 28px 20px 110px; display: flex; flex-direction: column; gap: 14px">
+
+    <header style="display: flex; align-items: center; justify-content: space-between; gap: 12px">
+      <div style="display: flex; flex-direction: column; gap: 2px">
+        <h1 style="margin: 0; font-size: 24px; font-weight: 800; letter-spacing: -0.02em">Berita &amp; Peringatan</h1>
+        <span style="font-size: 13px; color: #5E6E69">KHG Kahayan–Sebangau · diperbarui 14.05 WIB</span>
+      </div>
+      <button aria-label="Cari berita" style="width: 44px; height: 44px; border-radius: 22px; border: 1px solid #E1E6E3; background: #FFFFFF; display: flex; align-items: center; justify-content: center; color: #12201C; cursor: pointer; flex-shrink: 0">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m21 21-4.3-4.3"></path></svg>
+      </button>
+    </header>
+
+    <div role="group" aria-label="Kategori berita" style="flex-shrink: 0; display: flex; gap: 8px; overflow-x: auto; scrollbar-width: none; margin: 0 -20px; padding: 0 20px 2px">
+      <button class="ncat" data-cat="semua" aria-pressed="true" style="flex-shrink: 0; white-space: nowrap; height: 36px; padding: 0 14px; border-radius: 999px; font: inherit; font-size: 13px; font-weight: 600; cursor: pointer">Semua</button>
+<button class="ncat" data-cat="peringatan" aria-pressed="false" style="flex-shrink: 0; white-space: nowrap; height: 36px; padding: 0 14px; border-radius: 999px; font: inherit; font-size: 13px; font-weight: 600; cursor: pointer">Peringatan</button>
+<button class="ncat" data-cat="lapangan" aria-pressed="false" style="flex-shrink: 0; white-space: nowrap; height: 36px; padding: 0 14px; border-radius: 999px; font: inherit; font-size: 13px; font-weight: 600; cursor: pointer">Lapangan</button>
+<button class="ncat" data-cat="edukasi" aria-pressed="false" style="flex-shrink: 0; white-space: nowrap; height: 36px; padding: 0 14px; border-radius: 999px; font: inherit; font-size: 13px; font-weight: 600; cursor: pointer">Edukasi</button>
+    </div>
+
+    <div data-item="peringatan" style="display: contents">
+      <article style="background: #0E2A24; color: #FFFFFF; border-radius: 20px; padding: 16px; display: flex; flex-direction: column; gap: 10px">
+        <div style="display: flex; align-items: center; justify-content: space-between; gap: 8px">
+          <span style="display: flex; align-items: center; gap: 6px; font-size: 11px; font-weight: 700; color: #FF8A3D; text-transform: uppercase; letter-spacing: 0.08em">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3z"></path><path d="M12 9v4M12 17h.01"></path></svg>
+            Peringatan resmi
+          </span>
+          <span style="font-size: 11px; color: #A9C2BA">Disematkan</span>
+        </div>
+        <h2 style="margin: 0; font-size: 17px; font-weight: 800; line-height: 1.35">Status siaga kebakaran lahan berlaku hingga 30 November</h2>
+        <p style="margin: 0; font-size: 13px; line-height: 1.5; color: #D3E2DD">Dilarang membuka atau membersihkan lahan dengan cara membakar. Laporkan asap atau api sekecil apa pun lewat tombol Lapor.</p>
+        <span style="font-size: 12px; color: #A9C2BA">Posko Karhutla Kabupaten · 08.00 WIB</span>
+      </article>
+    </div>
+
+    <div data-item="lapangan" style="display: contents">
+      <article style="background: #FFFFFF; border: 1px solid #E1E6E3; border-radius: 18px; padding: 14px; display: flex; gap: 12px">
+        <span style="width: 56px; height: 56px; border-radius: 14px; background: #E6F4E9; color: #237A35; display: flex; align-items: center; justify-content: center; flex-shrink: 0">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 6c.6.5 1.2 1 2.5 1C7 7 7 5 9.5 5c2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"></path><path d="M2 12c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"></path><path d="M2 18c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"></path></svg>
+        </span>
+        <div style="display: flex; flex-direction: column; gap: 4px; min-width: 0">
+          <span style="display: flex; gap: 6px; flex-wrap: wrap"><span style="font-size: 11px; font-weight: 700; color: #237A35; background: #E6F4E9; padding: 3px 8px; border-radius: 999px">Lapangan</span><span style="font-size: 11px; font-weight: 700; color: #1864AB; background: #E7F1FB; padding: 3px 8px; border-radius: 999px">Dari laporan warga</span></span>
+          <h3 style="margin: 0; font-size: 15px; font-weight: 700; line-height: 1.35">Sekat kanal SK-12 selesai diperbaiki</h3>
+          <span style="font-size: 12px; color: #5E6E69">Tim MPA Sebangau Hilir · 1 jam lalu</span>
+        </div>
+      </article>
+    </div>
+
+    <div data-item="peringatan" style="display: contents">
+      <article style="background: #FFFFFF; border: 1px solid #E1E6E3; border-radius: 18px; padding: 14px; display: flex; gap: 12px">
+        <span style="width: 56px; height: 56px; border-radius: 14px; background: #FDE8E8; color: #C92A2A; display: flex; align-items: center; justify-content: center; flex-shrink: 0">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17.7 7.7a2.5 2.5 0 1 1 1.8 4.3H2"></path><path d="M9.6 4.6A2 2 0 1 1 11 8H2"></path><path d="M12.6 19.4A2 2 0 1 0 14 16H2"></path></svg>
+        </span>
+        <div style="display: flex; flex-direction: column; gap: 4px; min-width: 0">
+          <span style="display: flex"><span style="font-size: 11px; font-weight: 700; color: #C92A2A; background: #FDE8E8; padding: 3px 8px; border-radius: 999px">Peringatan</span></span>
+          <h3 style="margin: 0; font-size: 15px; font-weight: 700; line-height: 1.35">Angin kencang dari timur laut hingga Kamis</h3>
+          <span style="font-size: 12px; color: #5E6E69">Api mudah menjalar · 3 jam lalu</span>
+        </div>
+      </article>
+    </div>
+
+    <div data-item="edukasi" style="display: contents">
+      <article style="background: #FFFFFF; border: 1px solid #E1E6E3; border-radius: 18px; padding: 14px; display: flex; gap: 12px">
+        <span style="width: 56px; height: 56px; border-radius: 14px; background: #E7F1FB; color: #1971C2; display: flex; align-items: center; justify-content: center; flex-shrink: 0">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z"></path></svg>
+        </span>
+        <div style="display: flex; flex-direction: column; gap: 4px; min-width: 0">
+          <span style="display: flex"><span style="font-size: 11px; font-weight: 700; color: #1864AB; background: #E7F1FB; padding: 3px 8px; border-radius: 999px">Edukasi</span></span>
+          <h3 style="margin: 0; font-size: 15px; font-weight: 700; line-height: 1.35">5 langkah menjaga lahan gambut tetap basah</h3>
+          <span style="font-size: 12px; color: #5E6E69">Bacaan 4 menit</span>
+        </div>
+      </article>
+    </div>
+
+    <div data-item="lapangan" style="display: contents">
+      <article style="background: #FFFFFF; border: 1px solid #E1E6E3; border-radius: 18px; padding: 14px; display: flex; gap: 12px">
+        <span style="width: 56px; height: 56px; border-radius: 14px; background: #FFF0E6; color: #C2410C; display: flex; align-items: center; justify-content: center; flex-shrink: 0">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.07-2.14-.22-4.05 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.15.43-2.29 1-3a2.5 2.5 0 0 0 2.5 2.5z"></path></svg>
+        </span>
+        <div style="display: flex; flex-direction: column; gap: 4px; min-width: 0">
+          <span style="display: flex"><span style="font-size: 11px; font-weight: 700; color: #237A35; background: #E6F4E9; padding: 3px 8px; border-radius: 999px">Lapangan</span></span>
+          <h3 style="margin: 0; font-size: 15px; font-weight: 700; line-height: 1.35">Patroli gabungan padamkan titik api TA-2611-05</h3>
+          <span style="font-size: 12px; color: #5E6E69">Tumbang Nusa · kemarin</span>
+        </div>
+      </article>
+    </div>
+
+    <div data-item="edukasi" style="display: contents">
+      <article style="background: #FFFFFF; border: 1px solid #E1E6E3; border-radius: 18px; padding: 14px; display: flex; gap: 12px">
+        <span style="width: 56px; height: 56px; border-radius: 14px; background: #E7F1FB; color: #1971C2; display: flex; align-items: center; justify-content: center; flex-shrink: 0">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"></path></svg>
+        </span>
+        <div style="display: flex; flex-direction: column; gap: 4px; min-width: 0">
+          <span style="display: flex"><span style="font-size: 11px; font-weight: 700; color: #1864AB; background: #E7F1FB; padding: 3px 8px; border-radius: 999px">Edukasi</span></span>
+          <h3 style="margin: 0; font-size: 15px; font-weight: 700; line-height: 1.35">Simpan nomor darurat posko desa Anda</h3>
+          <span style="font-size: 12px; color: #5E6E69">Bacaan 1 menit</span>
+        </div>
+      </article>
+    </div>
+  </div>
+
+  <nav aria-label="Navigasi utama" style="position: absolute; left: 0; right: 0; bottom: 0; height: 88px; background: #FFFFFF; border-top: 1px solid #E1E6E3; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); padding: 6px 8px 0; box-sizing: border-box">
+    <a href="beranda.html" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; height: 52px; text-decoration: none; color: #5E6E69; font-size: 11px; font-weight: 600">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"></path></svg>
+      Beranda
+    </a>
+    <a href="peta.html" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; height: 52px; text-decoration: none; color: #5E6E69; font-size: 11px; font-weight: 600">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2-6-2z"></path><path d="M9 4v14M15 6v14"></path></svg>
+      Peta
+    </a>
+    <a href="lapor.html" style="display: flex; flex-direction: column; align-items: center; justify-content: flex-end; gap: 4px; height: 52px; text-decoration: none; color: #12201C; font-size: 11px; font-weight: 700">
+      <span style="width: 52px; height: 52px; border-radius: 18px; background: #E8590C; color: #FFFFFF; display: flex; align-items: center; justify-content: center; margin-top: -24px; box-shadow: 0 8px 18px rgba(232, 89, 12, 0.32)">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg>
+      </span>
+      Lapor
+    </a>
+    <a href="titik-api.html" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; height: 52px; text-decoration: none; color: #5E6E69; font-size: 11px; font-weight: 600">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.07-2.14-.22-4.05 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.15.43-2.29 1-3a2.5 2.5 0 0 0 2.5 2.5z"></path></svg>
+      Titik Api
+    </a>
+    <a href="berita.html" aria-current="page" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; height: 52px; text-decoration: none; color: #0E4D3F; font-size: 11px; font-weight: 700">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 22h14a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2"></path><path d="M18 14h-8M15 18h-5M10 6h8v4h-8z"></path></svg>
+      Berita
+    </a>
+  </nav>
+</div>
+</main>
+<script>
+const cats=[...document.querySelectorAll('.ncat')],items=[...document.querySelectorAll('[data-item]')];
+function pick(k){cats.forEach(c=>{const on=c.dataset.cat===k;c.setAttribute('aria-pressed',on);c.style.background=on?'#12201C':'#FFFFFF';
+c.style.color=on?'#FFFFFF':'#12201C';c.style.border='1px solid '+(on?'#12201C':'#D3DAD6');});
+items.forEach(i=>{i.style.display=(k==='semua'||i.dataset.item===k)?'contents':'none';});}
+cats.forEach(c=>c.addEventListener('click',()=>pick(c.dataset.cat)));pick('semua');
+</script>
+</body>
+</html>
