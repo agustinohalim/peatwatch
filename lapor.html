@@ -147,6 +147,7 @@ const fv=document.getElementById('form-view'),sv=document.getElementById('sent-v
 document.getElementById('send').addEventListener('click',()=>{const t=types.find(b=>b.getAttribute('aria-pressed')==='true');
 document.getElementById('type-label').textContent=t.textContent.trim().toLowerCase();fv.hidden=true;sv.hidden=false;});
 document.getElementById('reset').addEventListener('click',()=>{sv.hidden=true;fv.hidden=false;types[0].click();document.querySelector('.level').click();});
+if(location.hash==='#terkirim'){fv.hidden=true;sv.hidden=false;}
 </script>
 </body>
 </html>
