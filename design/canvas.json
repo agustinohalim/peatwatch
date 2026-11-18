@@ -88,6 +88,15 @@
       "title": "09 Berita & Peringatan",
       "is_interactive": true,
       "radius": 40
+    },
+    "LaporanWarga.dc.html": {
+      "x": 3760,
+      "y": 0,
+      "w": 390,
+      "h": 844,
+      "title": "10 Laporan Warga",
+      "is_interactive": true,
+      "radius": 40
     }
   },
   "order": [
@@ -99,6 +108,7 @@
     "Lapor.dc.html",
     "TitikApiDetail.dc.html",
     "Berita.dc.html",
+    "LaporanWarga.dc.html",
     "StyleGuide.dc.html"
   ],
   "notes": {
@@ -107,7 +117,7 @@
       "y": -300,
       "text": "PeatWatch — Smart Peatland Protection",
       "kind": "title1",
-      "maxW": 3680
+      "maxW": 4150
     }
   },
   "designSystems": []
