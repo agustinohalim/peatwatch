@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<title>Cari</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#0E4D3F}a:hover{color:#0A372D}
+input::placeholder{color:#6B7A75}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; position: relative; overflow: hidden; background: #F3F5F2; color: #12201C; font-family: 'Plus Jakarta Sans', system-ui, sans-serif">
+  <div style="padding: 24px 20px 40px; display: flex; flex-direction: column; gap: 16px">
+
+    <header style="display: flex; align-items: center; gap: 10px">
+      <a href="Peta.dc.html" id="cari-back" aria-label="Kembali" style="width: 44px; height: 44px; border-radius: 22px; border: 1px solid #E1E6E3; background: #FFFFFF; display: flex; align-items: center; justify-content: center; color: #12201C; flex-shrink: 0">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"></path></svg>
+      </a>
+      <label style="flex-grow: 1; display: flex; align-items: center; gap: 10px; height: 48px; background: #FFFFFF; border: 2px solid #0E4D3F; border-radius: 16px; padding: 0 8px 0 12px; box-sizing: border-box">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#5E6E69" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m21 21-4.3-4.3"></path></svg>
+        <input id="q" aria-label="Cari desa, blok, kanal, titik api, atau berita" placeholder="Cari desa, blok, kanal…" value="Sebangau" style="flex-grow: 1; min-width: 0; border: 0; outline: none; font: inherit; font-size: 15px; font-weight: 600; color: #12201C; background: transparent">
+        <button id="q-clear" aria-label="Hapus pencarian" style="width: 32px; height: 32px; border-radius: 16px; border: 0; background: #EEF1EF; color: #4A5A55; display: flex; align-items: center; justify-content: center; cursor: pointer; flex-shrink: 0">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"></path></svg>
+        </button>
+      </label>
+    </header>
+
+    <section aria-labelledby="recent-title" style="display: flex; flex-direction: column; gap: 10px">
+      <h2 id="recent-title" style="margin: 0; font-size: 13px; font-weight: 700; color: #5E6E69; text-transform: uppercase; letter-spacing: 0.06em">Pencarian terakhir</h2>
+      <div style="display: flex; gap: 8px; flex-wrap: wrap">
+        <a href="Peta.dc.html" style="height: 36px; padding: 0 14px; border-radius: 999px; background: #FFFFFF; border: 1px solid #D3DAD6; color: #12201C; text-decoration: none; font-size: 13px; font-weight: 600; display: flex; align-items: center; gap: 6px">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#5E6E69" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg>
+          Blok C-7
+        </a>
+        <a href="Peta.dc.html" style="height: 36px; padding: 0 14px; border-radius: 999px; background: #FFFFFF; border: 1px solid #D3DAD6; color: #12201C; text-decoration: none; font-size: 13px; font-weight: 600; display: flex; align-items: center; gap: 6px">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#5E6E69" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg>
+          Kanal K-3
+        </a>
+        <a href="Peta.dc.html" style="height: 36px; padding: 0 14px; border-radius: 999px; background: #FFFFFF; border: 1px solid #D3DAD6; color: #12201C; text-decoration: none; font-size: 13px; font-weight: 600; display: flex; align-items: center; gap: 6px">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#5E6E69" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg>
+          Tumbang Nusa
+        </a>
+      </div>
+    </section>
+
+    <section aria-labelledby="res-title" style="display: flex; flex-direction: column; gap: 10px">
+      <h2 id="res-title" style="margin: 0; font-size: 16px; font-weight: 700">Hasil pencarian</h2>
+      <div style="background: #FFFFFF; border: 1px solid #E1E6E3; border-radius: 18px; display: flex; flex-direction: column; overflow: hidden">
+        <a href="Peta.dc.html" data-q="blok c-7 sebangau hilir zona risiko ekstrem" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 12px; padding: 14px 16px; border-bottom: 1px solid #EEF1EF">
+          <span style="width: 40px; height: 40px; border-radius: 12px; background: #FDE8E8; color: #C92A2A; display: flex; align-items: center; justify-content: center; flex-shrink: 0">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2-6-2z"></path><path d="M9 4v14M15 6v14"></path></svg>
+          </span>
+          <span style="flex-grow: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px">
+            <span style="font-size: 14px; font-weight: 600">Blok C-7 · Sebangau Hilir</span>
+            <span style="font-size: 12px; color: #5E6E69">Zona risiko ekstrem · 412 ha</span>
+          </span>
+          <span style="font-size: 11px; font-weight: 600; color: #4A5A55; background: #EEF1EF; padding: 4px 8px; border-radius: 999px">Zona</span>
+        </a>
+        <a href="Peta.dc.html" data-q="desa sebangau hilir kecamatan sebangau kuala" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 12px; padding: 14px 16px; border-bottom: 1px solid #EEF1EF">
+          <span style="width: 40px; height: 40px; border-radius: 12px; background: #EEF1EF; color: #4A5A55; display: flex; align-items: center; justify-content: center; flex-shrink: 0">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+          </span>
+          <span style="flex-grow: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px">
+            <span style="font-size: 14px; font-weight: 600">Desa Sebangau Hilir</span>
+            <span style="font-size: 12px; color: #5E6E69">Kec. Sebangau Kuala · 2,1 km</span>
+          </span>
+          <span style="font-size: 11px; font-weight: 600; color: #4A5A55; background: #EEF1EF; padding: 4px 8px; border-radius: 999px">Desa</span>
+        </a>
+        <a href="TitikApiDetail.dc.html" data-q="ta-2611-08 blok c-7 titik api sebangau" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 12px; padding: 14px 16px; border-bottom: 1px solid #EEF1EF">
+          <span style="width: 40px; height: 40px; border-radius: 12px; background: #FFF0E6; color: #C2410C; display: flex; align-items: center; justify-content: center; flex-shrink: 0">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.07-2.14-.22-4.05 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.15.43-2.29 1-3a2.5 2.5 0 0 0 2.5 2.5z"></path></svg>
+          </span>
+          <span style="flex-grow: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px">
+            <span style="font-size: 14px; font-weight: 600">TA-2611-08 · Blok C-7</span>
+            <span style="font-size: 12px; color: #5E6E69">Sebangau Hilir · 3,2 km dari Anda</span>
+          </span>
+          <span style="font-size: 11px; font-weight: 600; color: #4A5A55; background: #EEF1EF; padding: 4px 8px; border-radius: 999px">Titik api</span>
+        </a>
+        <a href="Kelembapan.dc.html" data-q="stasiun sg-07 blok c-7 sensor kelembapan sebangau" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 12px; padding: 14px 16px; border-bottom: 1px solid #EEF1EF">
+          <span style="width: 40px; height: 40px; border-radius: 12px; background: #E7F1FB; color: #1971C2; display: flex; align-items: center; justify-content: center; flex-shrink: 0">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.9 19.1a10 10 0 0 1 0-14.2M7.8 16.2a6 6 0 0 1 0-8.4M16.2 7.8a6 6 0 0 1 0 8.4M19.1 4.9a10 10 0 0 1 0 14.2"></path><circle cx="12" cy="12" r="2"></circle></svg>
+          </span>
+          <span style="flex-grow: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px">
+            <span style="font-size: 14px; font-weight: 600">Stasiun SG-07 · Blok C-7</span>
+            <span style="font-size: 12px; color: #5E6E69">Sebangau Hilir · kelembapan 38%</span>
+          </span>
+          <span style="font-size: 11px; font-weight: 600; color: #4A5A55; background: #EEF1EF; padding: 4px 8px; border-radius: 999px">Sensor</span>
+        </a>
+        <a href="Berita.dc.html" data-q="sekat kanal sk-12 selesai diperbaiki berita sebangau hilir" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 12px; padding: 14px 16px">
+          <span style="width: 40px; height: 40px; border-radius: 12px; background: #E6F4E9; color: #237A35; display: flex; align-items: center; justify-content: center; flex-shrink: 0">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 22h14a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2"></path><path d="M18 14h-8M15 18h-5M10 6h8v4h-8z"></path></svg>
+          </span>
+          <span style="flex-grow: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px">
+            <span style="font-size: 14px; font-weight: 600">Sekat kanal SK-12 selesai diperbaiki</span>
+            <span style="font-size: 12px; color: #5E6E69">Tim MPA Sebangau Hilir · 1 jam lalu</span>
+          </span>
+          <span style="font-size: 11px; font-weight: 600; color: #4A5A55; background: #EEF1EF; padding: 4px 8px; border-radius: 999px">Berita</span>
+        </a>
+      </div>
+      <p id="q-empty" style="display: none; margin: 0; padding: 24px 16px; text-align: center; font-size: 14px; color: #5E6E69; background: #FFFFFF; border: 1px solid #E1E6E3; border-radius: 18px">Tidak ada hasil. Coba nama desa, nomor blok, atau kode titik api.</p>
+    </section>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {};
+  }
+}
+</script>
+</body>
+</html>

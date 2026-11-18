@@ -97,6 +97,33 @@
       "title": "10 Laporan Warga",
       "is_interactive": true,
       "radius": 40
+    },
+    "Notifikasi.dc.html": {
+      "x": 4230,
+      "y": 0,
+      "w": 390,
+      "h": 844,
+      "title": "11 Notifikasi",
+      "is_interactive": true,
+      "radius": 40
+    },
+    "Cari.dc.html": {
+      "x": 4700,
+      "y": 0,
+      "w": 390,
+      "h": 844,
+      "title": "12 Cari",
+      "is_interactive": true,
+      "radius": 40
+    },
+    "FilterPeta.dc.html": {
+      "x": 5170,
+      "y": 0,
+      "w": 390,
+      "h": 844,
+      "title": "13 Filter Peta",
+      "is_interactive": true,
+      "radius": 40
     }
   },
   "order": [
@@ -109,6 +136,9 @@
     "TitikApiDetail.dc.html",
     "Berita.dc.html",
     "LaporanWarga.dc.html",
+    "Notifikasi.dc.html",
+    "Cari.dc.html",
+    "FilterPeta.dc.html",
     "StyleGuide.dc.html"
   ],
   "notes": {
@@ -117,7 +147,7 @@
       "y": -300,
       "text": "PeatWatch — Smart Peatland Protection",
       "kind": "title1",
-      "maxW": 4150
+      "maxW": 5560
     }
   },
   "designSystems": []

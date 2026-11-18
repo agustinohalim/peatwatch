@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<title>Notifikasi</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#0E4D3F}a:hover{color:#0A372D}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; position: relative; overflow: hidden; background: #F3F5F2; color: #12201C; font-family: 'Plus Jakarta Sans', system-ui, sans-serif">
+  <div style="padding: 24px 20px 110px; display: flex; flex-direction: column; gap: 14px">
+
+    <header style="display: flex; align-items: center; gap: 12px">
+      <a href="Main.dc.html" aria-label="Kembali ke beranda" style="width: 44px; height: 44px; border-radius: 22px; border: 1px solid #E1E6E3; background: #FFFFFF; display: flex; align-items: center; justify-content: center; color: #12201C; flex-shrink: 0">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"></path></svg>
+      </a>
+      <div style="display: flex; flex-direction: column; gap: 2px; flex-grow: 1">
+        <h1 style="margin: 0; font-size: 20px; font-weight: 800; letter-spacing: -0.01em">Notifikasi</h1>
+        <span style="font-size: 13px; color: #5E6E69">3 belum dibaca</span>
+      </div>
+      <button aria-label="Tandai semua dibaca" style="width: 44px; height: 44px; border-radius: 22px; border: 1px solid #E1E6E3; background: #FFFFFF; display: flex; align-items: center; justify-content: center; color: #12201C; cursor: pointer">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg>
+      </button>
+    </header>
+
+    <h2 style="margin: 4px 0 0; font-size: 13px; font-weight: 700; color: #5E6E69; text-transform: uppercase; letter-spacing: 0.06em">Hari ini</h2>
+
+    <a href="TitikApiDetail.dc.html" style="text-decoration: none; color: inherit; background: #FFFFFF; border: 1px solid #E1E6E3; border-radius: 18px; padding: 14px; display: flex; gap: 12px; align-items: flex-start">
+      <span style="width: 44px; height: 44px; border-radius: 14px; background: #FFF0E6; color: #C2410C; display: flex; align-items: center; justify-content: center; flex-shrink: 0">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.07-2.14-.22-4.05 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.15.43-2.29 1-3a2.5 2.5 0 0 0 2.5 2.5z"></path></svg>
+      </span>
+      <span style="display: flex; flex-direction: column; gap: 3px; flex-grow: 1; min-width: 0">
+        <span style="font-size: 14px; font-weight: 700; line-height: 1.35">2 titik api baru &lt; 5 km dari Anda</span>
+        <span style="font-size: 12px; color: #5E6E69">TA-2611-08 · Blok C-7 · 13.42</span>
+      </span>
+      <span aria-label="Belum dibaca" style="width: 10px; height: 10px; border-radius: 5px; background: #E8590C; flex-shrink: 0; margin-top: 6px"></span>
+    </a>
+
+    <a href="LaporanWarga.dc.html" style="text-decoration: none; color: inherit; background: #FFFFFF; border: 1px solid #E1E6E3; border-radius: 18px; padding: 14px; display: flex; gap: 12px; align-items: flex-start">
+      <span style="width: 44px; height: 44px; border-radius: 14px; background: #E7F1FB; color: #1971C2; display: flex; align-items: center; justify-content: center; flex-shrink: 0">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg>
+      </span>
+      <span style="display: flex; flex-direction: column; gap: 3px; flex-grow: 1; min-width: 0">
+        <span style="font-size: 14px; font-weight: 700; line-height: 1.35">Laporan LP-2611-0142 diterima posko</span>
+        <span style="font-size: 12px; color: #5E6E69">Tim akan memverifikasi dalam 2 jam · 14.10</span>
+      </span>
+      <span aria-label="Belum dibaca" style="width: 10px; height: 10px; border-radius: 5px; background: #E8590C; flex-shrink: 0; margin-top: 6px"></span>
+    </a>
+
+    <a href="Peta.dc.html" style="text-decoration: none; color: inherit; background: #FFFFFF; border: 1px solid #E1E6E3; border-radius: 18px; padding: 14px; display: flex; gap: 12px; align-items: flex-start">
+      <span style="width: 44px; height: 44px; border-radius: 14px; background: #FDE8E8; color: #C92A2A; display: flex; align-items: center; justify-content: center; flex-shrink: 0">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3z"></path><path d="M12 9v4M12 17h.01"></path></svg>
+      </span>
+      <span style="display: flex; flex-direction: column; gap: 3px; flex-grow: 1; min-width: 0">
+        <span style="font-size: 14px; font-weight: 700; line-height: 1.35">Status risiko naik menjadi Tinggi</span>
+        <span style="font-size: 12px; color: #5E6E69">Muka air turun 6 cm dalam 3 hari · 07.30</span>
+      </span>
+      <span aria-label="Belum dibaca" style="width: 10px; height: 10px; border-radius: 5px; background: #E8590C; flex-shrink: 0; margin-top: 6px"></span>
+    </a>
+
+    <h2 style="margin: 4px 0 0; font-size: 13px; font-weight: 700; color: #5E6E69; text-transform: uppercase; letter-spacing: 0.06em">Kemarin</h2>
+
+    <a href="Berita.dc.html" style="text-decoration: none; color: inherit; background: transparent; border: 1px solid #E1E6E3; border-radius: 18px; padding: 14px; display: flex; gap: 12px; align-items: flex-start">
+      <span style="width: 44px; height: 44px; border-radius: 14px; background: #E6F4E9; color: #237A35; display: flex; align-items: center; justify-content: center; flex-shrink: 0">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 6c.6.5 1.2 1 2.5 1C7 7 7 5 9.5 5c2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"></path><path d="M2 12c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"></path><path d="M2 18c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"></path></svg>
+      </span>
+      <span style="display: flex; flex-direction: column; gap: 3px; flex-grow: 1; min-width: 0">
+        <span style="font-size: 14px; font-weight: 600; line-height: 1.35">Sekat kanal SK-12 selesai diperbaiki</span>
+        <span style="font-size: 12px; color: #5E6E69">Laporan warga ditindaklanjuti · 16.20</span>
+      </span>
+    </a>
+
+    <a href="Berita.dc.html" style="text-decoration: none; color: inherit; background: transparent; border: 1px solid #E1E6E3; border-radius: 18px; padding: 14px; display: flex; gap: 12px; align-items: flex-start">
+      <span style="width: 44px; height: 44px; border-radius: 14px; background: #EEF1EF; color: #4A5A55; display: flex; align-items: center; justify-content: center; flex-shrink: 0">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 22h14a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2"></path><path d="M18 14h-8M15 18h-5M10 6h8v4h-8z"></path></svg>
+      </span>
+      <span style="display: flex; flex-direction: column; gap: 3px; flex-grow: 1; min-width: 0">
+        <span style="font-size: 14px; font-weight: 600; line-height: 1.35">Peringatan resmi: status siaga hingga 30 November</span>
+        <span style="font-size: 12px; color: #5E6E69">Posko Karhutla Kabupaten · 08.00</span>
+      </span>
+    </a>
+  </div>
+
+  <nav aria-label="Navigasi utama" style="position: absolute; left: 0; right: 0; bottom: 0; height: 88px; background: #FFFFFF; border-top: 1px solid #E1E6E3; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); padding: 6px 8px 0; box-sizing: border-box">
+    <a href="Main.dc.html" aria-current="page" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; height: 52px; text-decoration: none; color: #0E4D3F; font-size: 11px; font-weight: 700">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"></path></svg>
+      Beranda
+    </a>
+    <a href="Peta.dc.html" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; height: 52px; text-decoration: none; color: #5E6E69; font-size: 11px; font-weight: 600">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2-6-2z"></path><path d="M9 4v14M15 6v14"></path></svg>
+      Peta
+    </a>
+    <a href="Lapor.dc.html" style="display: flex; flex-direction: column; align-items: center; justify-content: flex-end; gap: 4px; height: 52px; text-decoration: none; color: #12201C; font-size: 11px; font-weight: 700">
+      <span style="width: 52px; height: 52px; border-radius: 18px; background: #E8590C; color: #FFFFFF; display: flex; align-items: center; justify-content: center; margin-top: -24px; box-shadow: 0 8px 18px rgba(232, 89, 12, 0.32)">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg>
+      </span>
+      Lapor
+    </a>
+    <a href="TitikApi.dc.html" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; height: 52px; text-decoration: none; color: #5E6E69; font-size: 11px; font-weight: 600">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.07-2.14-.22-4.05 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.15.43-2.29 1-3a2.5 2.5 0 0 0 2.5 2.5z"></path></svg>
+      Titik Api
+    </a>
+    <a href="Berita.dc.html" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; height: 52px; text-decoration: none; color: #5E6E69; font-size: 11px; font-weight: 600">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 22h14a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2"></path><path d="M18 14h-8M15 18h-5M10 6h8v4h-8z"></path></svg>
+      Berita
+    </a>
+  </nav>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {};
+  }
+}
+</script>
+</body>
+</html>
