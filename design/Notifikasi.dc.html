@@ -24,9 +24,9 @@ a{color:#0E4D3F}a:hover{color:#0A372D}
       </a>
       <div style="display: flex; flex-direction: column; gap: 2px; flex-grow: 1">
         <h1 style="margin: 0; font-size: 20px; font-weight: 800; letter-spacing: -0.01em">Notifikasi</h1>
-        <span style="font-size: 13px; color: #5E6E69">3 belum dibaca</span>
+        <span style="font-size: 13px; color: #5E6E69">{{subtitle}}</span>
       </div>
-      <button aria-label="Tandai semua dibaca" style="width: 44px; height: 44px; border-radius: 22px; border: 1px solid #E1E6E3; background: #FFFFFF; display: flex; align-items: center; justify-content: center; color: #12201C; cursor: pointer">
+      <button aria-label="Tandai semua dibaca" onClick="{{markRead}}" style="width: 44px; height: 44px; border-radius: 22px; border: 1px solid #E1E6E3; background: #FFFFFF; display: flex; align-items: center; justify-content: center; color: #12201C; cursor: pointer">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg>
       </button>
     </header>
@@ -41,7 +41,7 @@ a{color:#0E4D3F}a:hover{color:#0A372D}
         <span style="font-size: 14px; font-weight: 700; line-height: 1.35">2 titik api baru &lt; 5 km dari Anda</span>
         <span style="font-size: 12px; color: #5E6E69">TA-2611-08 · Blok C-7 · 13.42</span>
       </span>
-      <span aria-label="Belum dibaca" style="width: 10px; height: 10px; border-radius: 5px; background: #E8590C; flex-shrink: 0; margin-top: 6px"></span>
+      <sc-if value="{{unread}}" hint-placeholder-val="{{ true }}"><span class="udot" aria-label="Belum dibaca" style="width: 10px; height: 10px; border-radius: 5px; background: #E8590C; flex-shrink: 0; margin-top: 6px"></span></sc-if>
     </a>
 
     <a href="LaporanWarga.dc.html" style="text-decoration: none; color: inherit; background: #FFFFFF; border: 1px solid #E1E6E3; border-radius: 18px; padding: 14px; display: flex; gap: 12px; align-items: flex-start">
@@ -52,7 +52,7 @@ a{color:#0E4D3F}a:hover{color:#0A372D}
         <span style="font-size: 14px; font-weight: 700; line-height: 1.35">Laporan LP-2611-0142 diterima posko</span>
         <span style="font-size: 12px; color: #5E6E69">Tim akan memverifikasi dalam 2 jam · 14.10</span>
       </span>
-      <span aria-label="Belum dibaca" style="width: 10px; height: 10px; border-radius: 5px; background: #E8590C; flex-shrink: 0; margin-top: 6px"></span>
+      <sc-if value="{{unread}}" hint-placeholder-val="{{ true }}"><span class="udot" aria-label="Belum dibaca" style="width: 10px; height: 10px; border-radius: 5px; background: #E8590C; flex-shrink: 0; margin-top: 6px"></span></sc-if>
     </a>
 
     <a href="Peta.dc.html" style="text-decoration: none; color: inherit; background: #FFFFFF; border: 1px solid #E1E6E3; border-radius: 18px; padding: 14px; display: flex; gap: 12px; align-items: flex-start">
@@ -63,7 +63,7 @@ a{color:#0E4D3F}a:hover{color:#0A372D}
         <span style="font-size: 14px; font-weight: 700; line-height: 1.35">Status risiko naik menjadi Tinggi</span>
         <span style="font-size: 12px; color: #5E6E69">Muka air turun 6 cm dalam 3 hari · 07.30</span>
       </span>
-      <span aria-label="Belum dibaca" style="width: 10px; height: 10px; border-radius: 5px; background: #E8590C; flex-shrink: 0; margin-top: 6px"></span>
+      <sc-if value="{{unread}}" hint-placeholder-val="{{ true }}"><span class="udot" aria-label="Belum dibaca" style="width: 10px; height: 10px; border-radius: 5px; background: #E8590C; flex-shrink: 0; margin-top: 6px"></span></sc-if>
     </a>
 
     <h2 style="margin: 4px 0 0; font-size: 13px; font-weight: 700; color: #5E6E69; text-transform: uppercase; letter-spacing: 0.06em">Kemarin</h2>
@@ -118,7 +118,7 @@ a{color:#0E4D3F}a:hover{color:#0A372D}
 <script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
 class Component extends DCLogic {
   renderVals() {
-    return {};
+    return { unread: !(this.state && this.state.read), subtitle: this.state && this.state.read ? 'Semua sudah dibaca' : '3 belum dibaca', markRead: () => this.setState({ read: true }) };
   }
 }
 </script>

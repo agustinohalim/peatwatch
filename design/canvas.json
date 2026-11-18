@@ -124,6 +124,33 @@
       "title": "13 Filter Peta",
       "is_interactive": true,
       "radius": 40
+    },
+    "Rute.dc.html": {
+      "x": 5640,
+      "y": 0,
+      "w": 390,
+      "h": 844,
+      "title": "14 Rute",
+      "is_interactive": true,
+      "radius": 40
+    },
+    "PilihLokasi.dc.html": {
+      "x": 6110,
+      "y": 0,
+      "w": 390,
+      "h": 844,
+      "title": "15 Pilih Lokasi",
+      "is_interactive": true,
+      "radius": 40
+    },
+    "AmbilFoto.dc.html": {
+      "x": 6580,
+      "y": 0,
+      "w": 390,
+      "h": 844,
+      "title": "16 Ambil Foto",
+      "is_interactive": true,
+      "radius": 40
     }
   },
   "order": [
@@ -139,6 +166,9 @@
     "Notifikasi.dc.html",
     "Cari.dc.html",
     "FilterPeta.dc.html",
+    "Rute.dc.html",
+    "PilihLokasi.dc.html",
+    "AmbilFoto.dc.html",
     "StyleGuide.dc.html"
   ],
   "notes": {
@@ -147,7 +177,7 @@
       "y": -300,
       "text": "PeatWatch — Smart Peatland Protection",
       "kind": "title1",
-      "maxW": 5560
+      "maxW": 6970
     }
   },
   "designSystems": []

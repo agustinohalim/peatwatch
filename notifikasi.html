@@ -14,6 +14,7 @@
 body{margin:0;background:#DCE3DF;font-family:'Plus Jakarta Sans',system-ui,sans-serif;min-height:100vh;display:flex;flex-direction:column;align-items:center}
 a{color:#0E4D3F}a:hover{color:#0A372D}
 textarea::placeholder,input::placeholder{color:#6B7A75}
+[data-radio][aria-pressed="false"] .pw-check{visibility:hidden!important}[data-radio][aria-pressed="true"] .pw-check{visibility:visible!important}
 .topbar{width:100%;max-width:430px;box-sizing:border-box;display:flex;justify-content:space-between;align-items:center;padding:16px 20px;font-size:13px;font-weight:600}
 .topbar a{text-decoration:none;display:inline-flex;align-items:center;gap:6px;min-height:44px}
 .phone{width:390px;height:844px;border-radius:40px;overflow:hidden;box-shadow:0 30px 60px rgba(14,42,36,.25),0 0 0 10px #12201C;margin:10px 0 48px}
@@ -40,9 +41,9 @@ button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible{
       </a>
       <div style="display: flex; flex-direction: column; gap: 2px; flex-grow: 1">
         <h1 style="margin: 0; font-size: 20px; font-weight: 800; letter-spacing: -0.01em">Notifikasi</h1>
-        <span style="font-size: 13px; color: #5E6E69">3 belum dibaca</span>
+        <span style="font-size: 13px; color: #5E6E69"><span id="nsub">3 belum dibaca</span></span>
       </div>
-      <button aria-label="Tandai semua dibaca" style="width: 44px; height: 44px; border-radius: 22px; border: 1px solid #E1E6E3; background: #FFFFFF; display: flex; align-items: center; justify-content: center; color: #12201C; cursor: pointer">
+      <button aria-label="Tandai semua dibaca" id="markread" style="width: 44px; height: 44px; border-radius: 22px; border: 1px solid #E1E6E3; background: #FFFFFF; display: flex; align-items: center; justify-content: center; color: #12201C; cursor: pointer">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg>
       </button>
     </header>
@@ -57,7 +58,7 @@ button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible{
         <span style="font-size: 14px; font-weight: 700; line-height: 1.35">2 titik api baru &lt; 5 km dari Anda</span>
         <span style="font-size: 12px; color: #5E6E69">TA-2611-08 · Blok C-7 · 13.42</span>
       </span>
-      <span aria-label="Belum dibaca" style="width: 10px; height: 10px; border-radius: 5px; background: #E8590C; flex-shrink: 0; margin-top: 6px"></span>
+      <span class="udot" aria-label="Belum dibaca" style="width: 10px; height: 10px; border-radius: 5px; background: #E8590C; flex-shrink: 0; margin-top: 6px"></span>
     </a>
 
     <a href="laporan-warga.html" style="text-decoration: none; color: inherit; background: #FFFFFF; border: 1px solid #E1E6E3; border-radius: 18px; padding: 14px; display: flex; gap: 12px; align-items: flex-start">
@@ -68,7 +69,7 @@ button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible{
         <span style="font-size: 14px; font-weight: 700; line-height: 1.35">Laporan LP-2611-0142 diterima posko</span>
         <span style="font-size: 12px; color: #5E6E69">Tim akan memverifikasi dalam 2 jam · 14.10</span>
       </span>
-      <span aria-label="Belum dibaca" style="width: 10px; height: 10px; border-radius: 5px; background: #E8590C; flex-shrink: 0; margin-top: 6px"></span>
+      <span class="udot" aria-label="Belum dibaca" style="width: 10px; height: 10px; border-radius: 5px; background: #E8590C; flex-shrink: 0; margin-top: 6px"></span>
     </a>
 
     <a href="peta.html" style="text-decoration: none; color: inherit; background: #FFFFFF; border: 1px solid #E1E6E3; border-radius: 18px; padding: 14px; display: flex; gap: 12px; align-items: flex-start">
@@ -79,7 +80,7 @@ button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible{
         <span style="font-size: 14px; font-weight: 700; line-height: 1.35">Status risiko naik menjadi Tinggi</span>
         <span style="font-size: 12px; color: #5E6E69">Muka air turun 6 cm dalam 3 hari · 07.30</span>
       </span>
-      <span aria-label="Belum dibaca" style="width: 10px; height: 10px; border-radius: 5px; background: #E8590C; flex-shrink: 0; margin-top: 6px"></span>
+      <span class="udot" aria-label="Belum dibaca" style="width: 10px; height: 10px; border-radius: 5px; background: #E8590C; flex-shrink: 0; margin-top: 6px"></span>
     </a>
 
     <h2 style="margin: 4px 0 0; font-size: 13px; font-weight: 700; color: #5E6E69; text-transform: uppercase; letter-spacing: 0.06em">Kemarin</h2>
@@ -131,6 +132,8 @@ button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible{
   </nav>
 </div>
 </main>
-
+<script>
+document.getElementById('markread').addEventListener('click',()=>{document.querySelectorAll('.udot').forEach(d=>d.style.visibility='hidden');document.getElementById('nsub').textContent='Semua sudah dibaca';});
+</script>
 </body>
 </html>
